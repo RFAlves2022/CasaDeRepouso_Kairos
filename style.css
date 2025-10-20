@@ -1,0 +1,23 @@
+/* /assets/styles.css */
+:root{
+    --bg-soft:#eef5ef;
+    --card:#f8fbf8;
+    --brand:#2f5b47;
+    --brand-2:#5f8b71;
+    --accent:#cfe6cf;
+    --ink:#21372e;
+  }
+  html,body{background:var(--bg-soft); color:var(--ink);}
+  .navbar{background:linear-gradient(180deg,#f4faf4,transparent);}
+  .brand-badge{display:inline-flex; align-items:center; gap:.5rem;}
+  .brand-logo{width:36px; height:36px; border-radius:50%; background:radial-gradient(circle at 30% 30%, var(--accent), #9fbe9f);}
+  .btn-brand{background:var(--brand); color:#fff; border:none;}
+  .btn-brand:hover{background:#274c3b; color:#fff;}
+  .hero{background:var(--card); border-radius:1rem; box-shadow:0 10px 24px rgba(0,0,0,.06);}
+  .card-soft{background:var(--card); border:0; border-radius:1rem; box-shadow:0 8px 18px rgba(0,0,0,.05);}
+  .kairos-section{padding-block:3rem;}
+  .badge-soft{background:var(--accent); color:var(--brand);}
+  .table thead th{color:var(--brand);}
+  .link-muted{color:var(--brand-2); text-decoration:none;}
+  .link-muted:hover{color:var(--brand);}
+  
