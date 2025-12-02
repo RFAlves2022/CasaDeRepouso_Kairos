@@ -1,23 +1,110 @@
-/* /assets/styles.css */
-:root{
-    --bg-soft:#eef5ef;
-    --card:#f8fbf8;
-    --brand:#2f5b47;
-    --brand-2:#5f8b71;
-    --accent:#cfe6cf;
-    --ink:#21372e;
-  }
-  html,body{background:var(--bg-soft); color:var(--ink);}
-  .navbar{background:linear-gradient(180deg,#f4faf4,transparent);}
-  .brand-badge{display:inline-flex; align-items:center; gap:.5rem;}
-  .brand-logo{width:36px; height:36px; border-radius:50%; background:radial-gradient(circle at 30% 30%, var(--accent), #9fbe9f);}
-  .btn-brand{background:var(--brand); color:#fff; border:none;}
-  .btn-brand:hover{background:#274c3b; color:#fff;}
-  .hero{background:var(--card); border-radius:1rem; box-shadow:0 10px 24px rgba(0,0,0,.06);}
-  .card-soft{background:var(--card); border:0; border-radius:1rem; box-shadow:0 8px 18px rgba(0,0,0,.05);}
-  .kairos-section{padding-block:3rem;}
-  .badge-soft{background:var(--accent); color:var(--brand);}
-  .table thead th{color:var(--brand);}
-  .link-muted{color:var(--brand-2); text-decoration:none;}
-  .link-muted:hover{color:var(--brand);}
-  
+.bgColor1 {
+    background-color: #5D737E;
+}
+.color1{
+    color: #5D737E;
+}
+.color2{
+    color: #64B6AC;
+}
+p {
+    color: #5D737E;
+}
+
+.bgColor2 {
+    background-color: #64B6AC;
+}
+
+.bgColor3 {
+    background-color: #C0FDFb;
+}
+
+.bgColor4 {
+    background-color: #DAFFEF;
+}
+
+.bgColor5 {
+    background-color: #FCFFFD;
+}
+
+body {
+    background: linear-gradient(to bottom right, #d6f5f2, #eafff7, #ffffff);
+    min-height: 100vh;
+}
+
+.table-rounded table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.badge {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+.rounded-lg {
+    border-radius: 15px;
+}
+
+.bgColor2-faded {
+    background: linear-gradient(135deg, #a1ded1, #c4f2e5);
+}
+
+.navbar-brand span {
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 0.5px;
+}
+.circle-link {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0;
+      transition: 0.3s;
+    }
+
+    .circle-link:hover {
+      background-color: #d9edf7;
+      transform: scale(1.05);
+    }
+
+    .circle-img {
+      max-width: 60%;
+      max-height: 60%;
+    }
+
+#btnSearch {
+    background-color: #5D737E;
+    color: white;
+    border: 1px solid #5D737E;
+}
+
+#btn-pesquisar:hover {
+    background-color: #4a5d66;
+    border-color: #4a5d66;
+}
+
+.formulario-molde {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px; 
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+   .table-responsive {
+        position: relative;
+        overflow-y: auto; 
+        max-height: 400px;
+    }
+
+    .table thead th {
+        position: sticky; 
+        top: 0;
+        z-index: 2;
+        background-color: #f8f9fa;
+    }

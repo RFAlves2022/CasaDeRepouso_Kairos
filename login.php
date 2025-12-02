@@ -1,103 +1,133 @@
-<!doctype html>
-<html lang="pt-br">
+<?php
+include_once "dbConnection.php";
+session_start();
+require_once "loginValidation.php";
+?>
+
+<!DOCTYPE html>
+<html lang="PT-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acessar • Kairós</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairós • Acessar</title>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/abstract-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Tema (mesmo do index) -->
-  <style>
-    :root{
-      --bg-soft:#eef5ef;
-      --card:#f8fbf8;
-      --brand:#294f3d;
-      --brand-2:#5f8b71;
-      --accent:#cfe6cf;
-      --ink:#1f332b;
-    }
-    html,body{background:var(--bg-soft); color:var(--ink); min-height:100%;}
-    .brand-logo{width:88px; height:88px; border-radius:50%; background:
-      radial-gradient(circle at 30% 28%, var(--accent), #a7c5a7 65%);
-      display:inline-flex; align-items:center; justify-content:center;}
-    .brand-svg{width:68px; height:68px;}
-    .btn-brand{background:var(--brand); color:#fff; border:none;}
-    .btn-brand:hover{background:#234533; color:#fff;}
-    .input-soft{background:#fff; border:0; border-radius:.9rem; box-shadow:0 2px 0 rgba(0,0,0,.02) inset;}
-    .card-clean{background:transparent; border:0;}
-    .link-muted{color:var(--brand-2); text-decoration:none;}
-    .link-muted:hover{color:var(--brand);}
-  </style>
+    <style>
+        /* identidade visual igual à imagem */
+        body{
+            min-height:100vh;
+            margin:0;
+            background-color:#E5F2E8;   /* verde clarinho do fundo */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI",sans-serif;
+            color:#16352B;
+        }
+        main{
+            min-height:100vh;
+            display:flex;
+            align-items:flex-start;
+            justify-content:center;
+            padding-top:90px;           /* distância do topo igual ao print */
+        }
+        .login-container{
+            width:100%;
+            max-width:640px;
+            text-align:center;
+        }
+        .login-logo img{
+            width:86px;
+            height:86px;
+            margin-bottom:6px;
+        }
+        .login-title-main{
+            font-size:2.4rem;
+            font-weight:700;
+            color:#1F5B36;              /* verde do texto “Kairós”/“Acessar” */
+        }
+        .login-sub{
+            font-size:1.1rem;
+            color:#4E665A;
+            margin-bottom:28px;
+        }
+        .login-form-wrapper{
+            max-width:640px;
+            margin:0 auto;
+        }
+        .form-control{
+            border-radius:999px;
+            border:1px solid #B9CEC3;   /* borda suave para destacar do fundo */
+            background-color:#FFFFFF;
+            padding:14px 18px;
+            font-size:1rem;
+            box-shadow:0 4px 10px rgba(0,0,0,0.03);
+        }
+        .form-control:focus{
+            border-color:#184D30;       /* verde escuro no foco */
+            box-shadow:0 0 0 0.16rem rgba(24,77,48,0.25);
+            outline:none;
+        }
+        .btn-login{
+            width:100%;
+            padding:16px 18px;
+            border-radius:999px;
+            background-color:#184D30;   /* verde escuro do botão */
+            border:none;
+            color:#fff;
+            font-size:1.05rem;
+            font-weight:600;
+            margin-top:12px;
+        }
+        .btn-login:hover{
+            background-color:#123B24;
+        }
+        .forgot-link{
+            margin-top:18px;
+            font-size:0.95rem;
+            color:#6D7D75;
+            text-decoration:none;
+        }
+        .forgot-link:hover{
+            text-decoration:underline;
+        }
+        .alert{
+            border-radius:12px;
+        }
+    </style>
 </head>
+
 <body>
-  <main class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-7">
-        <div class="text-center mb-4">
-          <div class="d-inline-flex align-items-center gap-3">
-            <div class="brand-logo">
-              <svg class="brand-svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-                <circle cx="20" cy="22" r="4" fill="#2f6b52"/>
-                <circle cx="32" cy="16" r="4" fill="#2f6b52"/>
-                <circle cx="44" cy="22" r="4" fill="#2f6b52"/>
-                <path d="M32 28c10 6 14 16 14 16s-8-4-14-4-14 4-14 4 4-10 14-16Z" fill="#2f6b52"/>
-              </svg>
-            </div>
-            <div class="text-start">
-              <div class="display-6 fw-bold" style="color:var(--brand)">Kairós</div>
-              <div class="fs-4 text-muted">Casa de Repouso</div>
-            </div>
-          </div>
+<main>
+    <div class="login-container">
+
+        <!-- topo com logo e texto exatamente como na imagem -->
+        <div class="login-logo">
+            <img src="img/logotipo-kairos.png" alt="Kairós">
         </div>
+        <div class="login-sub text-muted">Casa de Repouso</div>
+        <h1 class="login-title-main mb-4">Acessar</h1>
 
-        <div class="card-clean text-center">
-          <h1 class="display-5 fw-bold mb-4" style="color:var(--brand)">Acessar</h1>
+        <?php if (!empty($erro)): ?>
+            <div class="alert alert-danger py-2 mb-3"><?= $erro ?></div>
+        <?php endif; ?>
 
-          <form class="mx-auto needs-validation" style="max-width:640px" novalidate>
-            <div class="mb-3 px-3">
-              <input type="email" class="form-control form-control-lg input-soft py-3"
-                     placeholder="E-mail" required>
-              <div class="invalid-feedback text-start px-1">Informe um e-mail válido.</div>
+        <!-- campos grandes centralizados -->
+        <form method="POST" class="login-form-wrapper">
+            <div class="mb-3">
+                <input type="text" name="username" class="form-control" placeholder="E-mail" required>
+            </div>
+            <div class="mb-1">
+                <input type="password" name="password" class="form-control" placeholder="Senha" required>
             </div>
 
-            <div class="mb-3 px-3">
-              <input type="password" class="form-control form-control-lg input-soft py-3"
-                     placeholder="Senha" required minlength="6">
-              <div class="invalid-feedback text-start px-1">Informe sua senha (mín. 6 caracteres).</div>
-            </div>
+            <button type="submit" class="btn btn-login">Entrar</button>
 
-            <div class="px-3">
-              <button class="btn btn-brand btn-lg w-100 py-3 rounded-4" type="submit">Entrar</button>
-            </div>
-
-            <div class="mt-3">
-              <a href="#" class="link-muted">Esqueci minha senha</a>
-            </div>
-          </form>
-        </div>
-
-      </div>
+            <a href="#!" class="forgot-link d-block">Esqueci minha senha</a>
+        </form>
     </div>
-  </main>
+</main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Validação Bootstrap 5 -->
-  <script>
-    (function () {
-      'use strict';
-      const forms = document.querySelectorAll('.needs-validation');
-      Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    })();
-  </script>
+<?php include_once "footer.php" ?>
 </body>
 </html>
