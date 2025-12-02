@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/05/2025 às 20:44
+-- Tempo de geração: 02/12/2025 às 16:15
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -67,7 +67,42 @@ INSERT INTO `tb_consultas` (`id`, `resident_id`, `data_consulta`, `horario`, `me
 (22, 122, '2025-05-22', '11:15:00', 'Dra. Helena Castro', 'Psiquiatria', 'Quadro estável.', 'Manter acompanhamento mensal'),
 (23, 123, '2025-06-04', '09:45:00', 'Dr. Carlos Henrique', 'Dermatologia', 'Avaliação de mancha escura.', 'Biopsia agendada'),
 (24, 124, '2025-06-03', '15:15:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Monitoramento de diabetes.', 'Metformina 500mg'),
-(25, 125, '2025-05-20', '10:30:00', 'Dr. João Silva', 'Cardiologia', 'Eletrocardiograma de rotina.', 'Sem alterações');
+(25, 125, '2025-05-20', '10:30:00', 'Dr. João Silva', 'Cardiologia', 'Eletrocardiograma de rotina.', 'Sem alterações'),
+(26, 201, '2025-07-01', '09:15:00', 'Dr. Ricardo Nunes', 'Cardiologia', 'Revisão de hipertensão, pressão controlada.', 'Manter Losartana 50mg 1x ao dia'),
+(27, 202, '2025-07-02', '10:45:00', 'Dra. Helena Prado', 'Endocrinologia', 'Avaliação de controle glicêmico.', 'Ajuste de Metformina para 850mg 2x ao dia'),
+(28, 203, '2025-07-03', '14:00:00', 'Dra. Patrícia Lemos', 'Psiquiatria', 'Relata melhora do humor e sono regular.', 'Manter Sertralina 50mg'),
+(29, 204, '2025-07-04', '08:30:00', 'Dr. Gustavo Serra', 'Cardiologia', 'Relata cansaço leve aos esforços.', 'Solicitado ecocardiograma'),
+(30, 205, '2025-07-05', '15:30:00', 'Dra. Camila Teixeira', 'Gastroenterologia', 'Queimação pós-refeição principalmente à noite.', 'Omeprazol 20mg antes do café da manhã'),
+(31, 101, '2025-07-05', '09:10:00', 'Dr. João Silva', 'Cardiologia', 'Retorno de hipertensão; pressão melhor controlada, sem queixas de dor torácica.', 'Manter Losartana 50mg e reforçar redução de sal na dieta.'),
+(32, 109, '2025-07-06', '10:20:00', 'Dr. João Silva', 'Cardiologia', 'Arritmia estável, paciente relata leve cansaço ao subir escadas.', 'Solicitado Holter 24h e manter medicação atual.'),
+(33, 102, '2025-07-03', '11:00:00', 'Dra. Ana Souza', 'Geriatria', 'Consulta de rotina; relato de sono reparador e bom apetite.', 'Manter Vitamina D e incentivar caminhadas leves diárias.'),
+(34, 118, '2025-07-08', '09:40:00', 'Dra. Ana Souza', 'Geriatria', 'Reavaliação de perda de apetite; ganho de peso discreto desde a última consulta.', 'Manter suplementação nutricional e reavaliar em 60 dias.'),
+(35, 105, '2025-07-04', '14:10:00', 'Dr. Marcelo Tavares', 'Neurologia', 'Esquecimentos persistem, porém sem piora significativa; família orientada.', 'Aumentar Rivastigmina para 3mg e reforçar rotina estruturada de atividades.'),
+(36, 121, '2025-07-09', '15:00:00', 'Dr. Marcelo Tavares', 'Neurologia', 'Crises de cefaleia menos frequentes; paciente relata melhora com hidratação.', 'Manter conduta atual e diário de dor para próxima consulta.'),
+(37, 106, '2025-07-02', '16:20:00', 'Dra. Helena Castro', 'Psiquiatria', 'Ansiedade controlada, sem efeitos colaterais relevantes.', 'Manter Sertralina 50mg e manter acompanhamento trimestral.'),
+(38, 114, '2025-07-10', '10:30:00', 'Dra. Helena Castro', 'Psiquiatria', 'Quadro depressivo em remissão parcial; ainda apresenta apatia em alguns períodos.', 'Manter tratamento atual e incluir grupo de convivência semanal.'),
+(39, 107, '2025-07-01', '08:50:00', 'Dr. Carlos Henrique', 'Dermatologia', 'Lesões em franca melhora, pele hidratada, sem sinais de infecção.', 'Manter pomada dermatológica por mais 15 dias.'),
+(40, 123, '2025-07-07', '13:30:00', 'Dr. Carlos Henrique', 'Dermatologia', 'Resultado de biópsia benigno; paciente e família orientados.', 'Suspender suspeita de malignidade; manter apenas proteção solar diária.'),
+(41, 124, '2025-07-11', '11:15:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Monitoramento de diabetes; glicemias em faixa alvo, sem hipoglicemias recentes.', 'Manter Metformina e reforçar ingestão hídrica.'),
+(42, 116, '2025-07-03', '09:30:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Check-up geral; ligeiro ganho de peso, sem outras alterações significativas.', 'Manter plano terapêutico e repetir exames em 6 meses.'),
+(43, 101, '2025-12-02', '08:30:00', 'Dr. João Silva', 'Cardiologia', 'Avaliação de pressão arterial; paciente sem queixas de dor.', 'Manter Losartana 50mg 1x ao dia e controlar ingestão de sal.'),
+(44, 108, '2025-12-02', '10:00:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Consulta de rotina; glicemia em níveis aceitáveis, sem hipoglicemias.', 'Manter Metformina e reforçar caminhada leve após o jantar.'),
+(45, 115, '2025-12-02', '14:15:00', 'Dr. Carlos Henrique', 'Dermatologia', 'Revisão de micose em pé direito; melhora importante, área quase cicatrizada.', 'Manter antifúngico por mais 7 dias e orientar secagem adequada dos pés.'),
+(46, 102, '2025-12-03', '09:00:00', 'Dra. Ana Souza', 'Geriatria', 'Consulta de acompanhamento; cognição estável, leve queixa de insônia.', 'Iniciar higiene do sono e chá calmante à noite; reavaliar em 30 dias.'),
+(47, 110, '2025-12-03', '11:30:00', 'Dra. Ana Souza', 'Geriatria', 'Relata cansaço ao final do dia, sem falta de ar ou dor torácica.', 'Solicitar exames laboratoriais básicos e incentivar hidratação.'),
+(48, 119, '2025-12-03', '15:45:00', 'Dr. Pedro Lima', 'Ortopedia', 'Queixa de dor leve em joelho esquerdo ao caminhar longas distâncias.', 'Indicar fisioterapia 2x por semana e uso de bengala em trajetos longos.'),
+(49, 103, '2025-12-04', '08:45:00', 'Dr. Pedro Lima', 'Ortopedia', 'Reavaliação de dor lombar; refere melhora parcial com alongamentos.', 'Manter exercícios orientados e analgesia se necessário.'),
+(50, 106, '2025-12-04', '10:15:00', 'Dra. Helena Castro', 'Psiquiatria', 'Ansiedade controlada, relata apenas preocupação com família.', 'Manter Sertralina 50mg e sugerir grupo de conversa semanal.'),
+(51, 124, '2025-12-04', '14:00:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Monitoramento de diabetes; glicemias pré-prandiais dentro da meta.', 'Manter Metformina e reforçar fracionamento das refeições.'),
+(52, 111, '2025-12-02', '09:50:00', 'Dra. Beatriz Mendes', 'Clínico Geral', 'Queixa de resfriado leve, tosse seca e coriza discreta.', 'Prescrito analgésico simples se dor e hidratação abundante.'),
+(53, 112, '2025-12-02', '11:20:00', 'Dra. Ana Souza', 'Geriatria', 'Relata cansaço ao final da tarde, sem falta de ar ou febre.', 'Solicitar hemograma e função tireoidiana para investigação.'),
+(54, 120, '2025-12-02', '16:10:00', 'Dr. João Silva', 'Cardiologia', 'Avaliação de rotina; relato de palpitações ocasionais à noite.', 'Solicitado Holter 24h e orientação para evitar cafeína em excesso.'),
+(55, 104, '2025-12-03', '08:20:00', 'Dra. Beatriz Mendes', 'Clínico Geral', 'Pressão arterial levemente elevada, sem outros sintomas associados.', 'Ajustar horário da medicação e reforçar dieta com pouco sal.'),
+(56, 113, '2025-12-03', '10:40:00', 'Dr. Marcelo Tavares', 'Neurologia', 'Relata episódios breves de tontura ao levantar da cama.', 'Orientado levantar-se lentamente e solicitado exame de imagem.'),
+(57, 125, '2025-12-03', '14:30:00', 'Dra. Patrícia Gomes', 'Geriatria', 'Consulta de revisão; alimentando-se bem, evacuações regulares.', 'Manter conduta atual e retorno em 3 meses.'),
+(58, 105, '2025-12-04', '09:05:00', 'Dr. Marcelo Tavares', 'Neurologia', 'Esquecimentos leves persistem, mas sem desorientação espacial.', 'Manter medicação e incluir exercícios cognitivos diários.'),
+(59, 107, '2025-12-04', '11:25:00', 'Dr. Carlos Henrique', 'Dermatologia', 'Nova lesão avermelhada em braço direito, sem sinais de infecção.', 'Prescrita pomada tópica e marcada reavaliação em 15 dias.'),
+(60, 118, '2025-12-04', '15:20:00', 'Dra. Ana Souza', 'Geriatria', 'Apetite melhor, porém ainda com perda de peso discreta.', 'Reforçar suplemento nutricional e registrar peso semanalmente.');
 
 -- --------------------------------------------------------
 
@@ -114,7 +149,15 @@ INSERT INTO `tb_medicamentos` (`id`, `resident_id`, `nome_medicamento`, `horario
 (22, 122, 'Atenolol', '09:00:00', '25mg', 'Oral', 'Verificar pressão arterial antes'),
 (23, 123, 'Clonazepam', '22:00:00', '0,5mg', 'Oral', 'Uso noturno para ansiedade'),
 (24, 124, 'Metformina', '13:00:00', '850mg', 'Oral', 'Tomar após almoço'),
-(25, 125, 'Omeprazol', '07:00:00', '20mg', 'Oral', 'Em jejum, antes do café');
+(25, 125, 'Omeprazol', '07:00:00', '20mg', 'Oral', 'Em jejum, antes do café'),
+(26, 201, 'Losartana', '07:00:00', '50mg', 'Oral', 'Tomar em jejum com água'),
+(27, 201, 'Hidroclorotiazida', '08:00:00', '25mg', 'Oral', 'Monitorar pressão e diurese'),
+(28, 202, 'Metformina', '07:30:00', '850mg', 'Oral', 'Tomar após o café da manhã'),
+(29, 202, 'Metformina', '19:30:00', '850mg', 'Oral', 'Tomar após o jantar'),
+(30, 203, 'Sertralina', '09:00:00', '50mg', 'Oral', 'Tomar sempre no mesmo horário'),
+(31, 204, 'Atenolol', '08:00:00', '50mg', 'Oral', 'Verificar pressão antes da dose'),
+(32, 205, 'Omeprazol', '06:30:00', '20mg', 'Oral', 'Tomar 30 minutos antes do café'),
+(33, 205, 'Carbonato de cálcio', '12:30:00', '600mg', 'Oral', 'Tomar após o almoço');
 
 -- --------------------------------------------------------
 
@@ -149,7 +192,13 @@ INSERT INTO `tb_observacoes_dia` (`id`, `resident_id`, `observacao`, `data_hora`
 (18, 113, 'Assistiu televisão até as 20h.', '2025-05-18 20:00:00'),
 (19, 114, 'Foi dormir às 21h.', '2025-05-18 21:00:00'),
 (20, 115, 'Acordou durante a madrugada para ir ao banheiro.', '2025-05-19 02:00:00'),
-(21, 116, 'Sem alterações durante a noite.', '2025-05-19 06:00:00');
+(21, 116, 'Sem alterações durante a noite.', '2025-05-19 06:00:00'),
+(22, 201, 'Acordou bem disposto, participou da roda de conversa.', '2025-07-01 08:30:00'),
+(23, 201, 'Pressão arterial dentro da meta pela manhã.', '2025-07-01 10:00:00'),
+(24, 202, 'Relatou leve tontura ao levantar-se, orientado a levantar devagar.', '2025-07-02 07:45:00'),
+(25, 203, 'Mostrou-se animada na atividade de música, cantou e interagiu com o grupo.', '2025-07-03 16:00:00'),
+(26, 204, 'Caminhou pelo pátio acompanhado, apresentou leve cansaço ao final.', '2025-07-04 09:30:00'),
+(27, 205, 'Referiu queimação após o jantar do dia anterior, sem náuseas.', '2025-07-05 07:15:00');
 
 -- --------------------------------------------------------
 
@@ -205,7 +254,12 @@ INSERT INTO `tb_residentes` (`id`, `nome`, `data_nasc`, `cpf`, `rg`, `telefone`,
 (122, 'Luiza Rocha', '1941-09-15', '654.987.321-00', 'SP-30.405.607', '(11) 93412-1247', 'Rua das Acácias, 300 - SP', 'luiza@email.com', 'C302', 'Atenolol', 'Aspirina', 'Nenhuma', 'João Rocha', '(11) 93412-1248', 'joao@email.com', 'Filho'),
 (123, 'Raimundo Ferreira', '1938-12-01', '456.789.123-00', 'RJ-50.607.809', '(21) 93412-1249', 'Rua dos Ipês, 700 - RJ', 'raimundo@email.com', 'C303', 'Clonazepam', 'Nenhuma', 'Nenhuma', 'Fernanda Ferreira', '(21) 93412-1250', 'fernanda@email.com', 'Filha'),
 (124, 'Nair Barbosa', '1940-10-25', '321.456.789-00', 'BA-70.809.010', '(71) 93412-1251', 'Rua das Palmeiras, 900 - SSA', 'nair@email.com', 'C304', 'Metformina', 'Nenhuma', 'Diabetes', 'Eduardo Barbosa', '(71) 93412-1252', 'eduardo@email.com', 'Filho'),
-(125, 'Doralice Antunes', '1935-02-02', '789.123.456-00', 'RS-90.010.211', '(51) 93412-1253', 'Rua Central, 1000 - POA', 'doralice@email.com', 'C305', 'Omeprazol', 'Nenhuma', 'Nenhuma', 'Patrícia Antunes', '(51) 93412-1254', 'patricia@email.com', 'Filha');
+(125, 'Doralice Antunes', '1935-02-02', '789.123.456-00', 'RS-90.010.211', '(51) 93412-1253', 'Rua Central, 1000 - POA', 'doralice@email.com', 'C305', 'Omeprazol', 'Nenhuma', 'Nenhuma', 'Patrícia Antunes', '(51) 93412-1254', 'patricia@email.com', 'Filha'),
+(201, 'Lúcia Andrade', '1941-02-15', '111.222.333-00', 'MG-10.111.222', '(31) 98888-1001', 'Rua Ipê Amarelo, 45 - BH', 'lucia.andrade@example.com', 'A201', 'Losartana', 'Nenhuma', 'Hipertensão', 'Rafael Andrade', '(31) 99777-3003', 'rafael.andrade@example.com', 'Filho'),
+(202, 'Manoel Correia', '1938-07-09', '222.333.444-11', 'SP-20.222.333', '(11) 98765-2002', 'Av. Central, 900 - SP', 'manoel.correia@example.com', 'A202', 'Metformina', 'Glúten', 'Diabetes', 'Carla Correia', '(11) 99666-4004', 'carla.correia@example.com', 'Filha'),
+(203, 'Olga Ribeiro', '1936-11-30', '333.444.555-22', 'RJ-30.333.444', '(21) 97654-3003', 'Rua das Laranjeiras, 12 - RJ', 'olga.ribeiro@example.com', 'A203', 'Sertralina', 'Dipirona', 'Nenhuma', 'Bruno Ribeiro', '(21) 99555-6006', 'bruno.ribeiro@example.com', 'Neto'),
+(204, 'Arnaldo Pires', '1940-03-22', '444.555.666-33', 'RS-40.444.555', '(51) 99876-4004', 'Rua do Lago, 300 - Porto Alegre', 'arnaldo.pires@example.com', 'A204', 'Atenolol', 'Nenhuma', 'Cardiopatia', 'Marta Pires', '(51) 99444-7007', 'marta.pires@example.com', 'Filha'),
+(205, 'Zilda Matos', '1939-09-18', '555.666.777-44', 'BA-50.555.666', '(71) 99777-5005', 'Av. Oceânica, 50 - Salvador', 'zilda.matos@example.com', 'A205', 'Omeprazol', 'Frutos do mar', 'Refluxo', 'Diego Matos', '(71) 99333-8008', 'diego.matos@example.com', 'Filho');
 
 -- --------------------------------------------------------
 
@@ -324,7 +378,19 @@ INSERT INTO `tb_rotina_atividade` (`id`, `rotina_id`, `hora`, `descricao`) VALUE
 (97, 25, '09:00:00', 'Roda de conversa: infância'),
 (98, 25, '11:00:00', 'Pintura com lápis de cor'),
 (99, 25, '14:30:00', 'Jogos com bola'),
-(100, 25, '17:30:00', 'Audição de discos antigos');
+(100, 25, '17:30:00', 'Audição de discos antigos'),
+(101, 26, '08:00:00', 'Alongamento leve na varanda'),
+(102, 26, '10:00:00', 'Leitura de jornal com apoio da equipe'),
+(103, 26, '16:00:00', 'Caminhada supervisionada no jardim'),
+(104, 27, '08:30:00', 'Conferência de glicemia e orientação alimentar'),
+(105, 27, '10:30:00', 'Atividade de memória com figuras'),
+(106, 27, '17:00:00', 'Jogo de cartas em grupo'),
+(107, 28, '09:00:00', 'Sessão de música suave'),
+(108, 28, '15:00:00', 'Cine-lar com filme clássico'),
+(109, 29, '08:15:00', 'Exercícios respiratórios sentados'),
+(110, 29, '14:30:00', 'Roda de conversa sobre notícias do dia'),
+(111, 30, '09:30:00', 'Oficina de pintura em grupo'),
+(112, 30, '16:30:00', 'Momento de relaxamento guiado');
 
 -- --------------------------------------------------------
 
@@ -378,7 +444,12 @@ INSERT INTO `tb_rotina_residente` (`id`, `resident_id`, `hora_acordar`, `hora_do
 (22, 122, '06:00:00', '20:30:00', '06:30:00', '11:30:00', '15:00:00', '17:30:00', '06:45:00', '12:30:00', '20:00:00', 'Evitar aspirina', '2025-05-19 15:31:34', '2025-05-19 15:31:34'),
 (23, 123, '06:30:00', '21:00:00', '07:00:00', '12:00:00', '15:30:00', '18:30:00', '07:30:00', '13:00:00', '20:30:00', NULL, '2025-05-19 15:31:34', '2025-05-19 15:31:34'),
 (24, 124, '06:15:00', '20:45:00', '06:45:00', '12:00:00', '15:00:00', '18:00:00', '07:00:00', '13:00:00', '20:15:00', 'Controle glicêmico', '2025-05-19 15:31:34', '2025-05-19 15:31:34'),
-(25, 125, '06:45:00', '21:15:00', '07:15:00', '12:15:00', '15:30:00', '18:45:00', '07:30:00', '13:15:00', '20:45:00', NULL, '2025-05-19 15:31:34', '2025-05-19 15:31:34');
+(25, 125, '06:45:00', '21:15:00', '07:15:00', '12:15:00', '15:30:00', '18:45:00', '07:30:00', '13:15:00', '20:45:00', NULL, '2025-05-19 15:31:34', '2025-05-19 15:31:34'),
+(26, 201, '06:30:00', '21:00:00', '07:00:00', '12:00:00', '15:30:00', '18:30:00', '07:00:00', '13:00:00', '20:30:00', 'Monitorar pressão antes da medicação.', '2025-12-02 11:54:50', '2025-12-02 11:54:50'),
+(27, 202, '06:45:00', '21:15:00', '07:30:00', '12:15:00', '16:00:00', '19:00:00', '07:30:00', '13:30:00', '21:00:00', 'Controle rigoroso de glicemia capilar.', '2025-12-02 11:54:50', '2025-12-02 11:54:50'),
+(28, 203, '07:00:00', '20:45:00', '07:30:00', '12:30:00', '15:30:00', '18:30:00', '09:00:00', '14:00:00', '20:00:00', 'Evitar estímulos muito intensos após as 19h.', '2025-12-02 11:54:50', '2025-12-02 11:54:50'),
+(29, 204, '06:15:00', '20:30:00', '06:45:00', '11:45:00', '15:00:00', '18:15:00', '08:00:00', '13:00:00', '20:00:00', 'Evitar subidas e esforços intensos.', '2025-12-02 11:54:50', '2025-12-02 11:54:50'),
+(30, 205, '06:30:00', '21:00:00', '07:00:00', '12:00:00', '15:00:00', '19:00:00', '06:30:00', '12:30:00', '20:30:00', 'Evitar alimentos muito ácidos ou gordurosos.', '2025-12-02 11:54:50', '2025-12-02 11:54:50');
 
 -- --------------------------------------------------------
 
@@ -398,7 +469,7 @@ CREATE TABLE `tb_users` (
 --
 
 INSERT INTO `tb_users` (`id`, `username`, `password`, `data_criacao`) VALUES
-(1, 'admin', '$2y$10$7R1il8UilsbAgbY1iKXKg.3NUeOQRvOwCQOeTeWR3OpXiSTl93FDy', '2025-05-15 15:43:25'),
+(1, 'admin', '$2y$10$NrKYLk8IRgMeldz1UXdq0.1xpg8cU8ksItBjeKsAOe4u3cspvjKXa', '2025-05-15 15:43:25'),
 (5, 'Enf_Silva', 'senha123', '2025-05-15 17:18:47'),
 (6, 'Cuidador_Oliveira', 'senha456', '2025-05-15 17:18:47'),
 (7, 'Adm_Santos', 'senha789', '2025-05-15 17:18:48'),
@@ -408,7 +479,10 @@ INSERT INTO `tb_users` (`id`, `username`, `password`, `data_criacao`) VALUES
 (11, 'LarDoceLar_Func', 'senhajkl', '2025-05-15 17:18:48'),
 (12, 'Equipe_Atençao', 'senhamno', '2025-05-15 17:18:48'),
 (13, 'Cuidado_Profissional', 'senhapqr', '2025-05-15 17:18:48'),
-(14, 'Gestao_Senior', 'senhastu', '2025-05-15 17:18:48');
+(14, 'Gestao_Senior', 'senhastu', '2025-05-15 17:18:48'),
+(15, 'Enf_Moreira', 'senhaTeste1', '2025-12-02 11:55:25'),
+(16, 'Cuidador_Souza', 'senhaTeste2', '2025-12-02 11:55:25'),
+(17, 'Gestao_Kairos', 'senhaTeste3', '2025-12-02 11:55:25');
 
 --
 -- Índices para tabelas despejadas
@@ -472,43 +546,43 @@ ALTER TABLE `tb_users`
 -- AUTO_INCREMENT de tabela `tb_consultas`
 --
 ALTER TABLE `tb_consultas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de tabela `tb_medicamentos`
 --
 ALTER TABLE `tb_medicamentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de tabela `tb_observacoes_dia`
 --
 ALTER TABLE `tb_observacoes_dia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de tabela `tb_residentes`
 --
 ALTER TABLE `tb_residentes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
 
 --
 -- AUTO_INCREMENT de tabela `tb_rotina_atividade`
 --
 ALTER TABLE `tb_rotina_atividade`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT de tabela `tb_rotina_residente`
 --
 ALTER TABLE `tb_rotina_residente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`
 --
 ALTER TABLE `tb_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Restrições para tabelas despejadas
