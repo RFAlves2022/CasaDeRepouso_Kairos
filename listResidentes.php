@@ -156,8 +156,14 @@ function calcularIdade($data_nasc)
   <div class="page-shell">
     <div class="page-card">
 
-      <!-- Título + subtítulo (igual às outras telas) -->
+      <!-- Cabeçalho -->
       <header class="mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <a href="dashboard.php" class="btn btn-sm"
+             style="border-radius:999px;border:1px solid #1F5B36;color:#1F5B36;background:#F6FBF8;">
+            Voltar
+          </a>
+        </div>
         <h1 class="page-header-title mb-1">Residentes</h1>
         <p class="page-header-sub mb-0">
           Gerencie cadastros, contatos e status de acolhimento.
