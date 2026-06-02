@@ -1,0 +1,16 @@
+Melhorias implementadas na última atualização da nossa aplicação:
+
+Migração de Infraestrutura: Realizamos a conversão do ambiente de desenvolvimento, abandonando o uso do localhost (XAMPP) e migrando a aplicação para um ambiente Linux, agora hospedado em uma VPS na Hostinger.
+
+Nova Página Institucional: Desenvolvemos uma página dedicada à exibição institucional, que inclui uma galeria de imagens para registrar e compartilhar o dia a dia dos nossos residentes.
+
+Perfil dos Residentes: Implementamos a funcionalidade de foto de perfil diretamente nas fichas individuais dos residentes, tornando a identificação visual mais ágil e integrada ao sistema.
+
+
+APLICAÇÃO HOSPEDADA NO HOSTINGER 
+URL : http://2.25.163.79/kairos/
+
+USER:ADMIN
+SENHA: ADMIN123
+
+NESSA VERSÃO DEMONSTRATIVA É POSSIVEL EXPLORAR A APLICAÇÃO E TESTAR TODAS SUAS FUNÇÕES.
